@@ -82,7 +82,7 @@ div ul {
 	list-style-type: none;
 }
 
-.post {
+.card {
 	font-family: 'Roboto', sans-serif;
 	width: 60%;
 	margin: 0 auto;
@@ -91,4 +91,16 @@ div ul {
     padding: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.card a {
+	text-decoration: none;
+	color: black;
+}
+.card em {
+	color: #333;
+}
+
+.card p {
+	color: #444;
 }
