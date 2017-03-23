@@ -104,3 +104,68 @@ div ul {
 .card p {
 	color: #444;
 }
+
+img.small {
+	width: auto;
+	height: 100%;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	padding: 1%
+}
+img.large {
+	width: auto;
+	height: 100%;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	padding: 1%
+}
+
+div.highlight {
+	margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.left {
+	width: 25%;
+	padding-top: 2%;
+}
+
+.right {
+	width: 75%;
+	padding-top: 2%;
+}
+
+.left .crop {
+	height: 12em;
+ 	width: 100%;
+ 	padding: 1%;
+}
+.right .crop {
+	height: 24em;
+ 	width: 100%;
+ 	padding: 1%;
+}
+
+#outdoor {
+	width: 100%;
+    height: 100%;
+	background: url(../assets/outdoor.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+#running {
+	width: 100%;
+    height: 100%;
+	background: url(../assets/running.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+#monitor {
+	width: 100%;
+    height: 100%;
+	background: url(../assets/designmonitor.jpeg) no-repeat center;
+    background-size: cover;
+}
