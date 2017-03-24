@@ -110,14 +110,12 @@ img.small {
 	height: 100%;
 	filter: alpha(opacity=50);
 	opacity: 0.5;
-	padding: 1%
 }
 img.large {
 	width: auto;
 	height: 100%;
 	filter: alpha(opacity=50);
 	opacity: 0.5;
-	padding: 1%
 }
 
 div.highlight {
@@ -126,27 +124,28 @@ div.highlight {
     justify-content: center;
     align-items: center;
     width: 80%;
+    overflow: hidden;
+    padding-top: 2%;
 }
 
 .left {
 	width: 25%;
-	padding-top: 2%;
+	padding: 2%;
 }
 
 .right {
 	width: 75%;
-	padding-top: 2%;
+	overflow: hidden;
 }
 
 .left .crop {
 	height: 12em;
  	width: 100%;
- 	padding: 1%;
+ 	overflow: hidden;
 }
 .right .crop {
 	height: 24em;
  	width: 100%;
- 	padding: 1%;
 }
 
 #outdoor {
@@ -154,6 +153,11 @@ div.highlight {
     height: 100%;
 	background: url(../assets/outdoor.jpeg) no-repeat center;
     background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);	
+    transform: scale(1.1);
 }
 
 #running {
@@ -161,6 +165,11 @@ div.highlight {
     height: 100%;
 	background: url(../assets/running.jpeg) no-repeat center;
     background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);	
+    transform: scale(1.1);
 }
 
 #monitor {
@@ -168,4 +177,38 @@ div.highlight {
     height: 100%;
 	background: url(../assets/designmonitor.jpeg) no-repeat center;
     background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);	
+    transform: scale(1.1);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-family: 'Roboto100', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.crop {
+	position: relative;
+}
+.center .btn {
+    border: white;
+    border-radius: 0.1em;
+    border-style: solid;
+    padding: 0.1em;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+    font-size: 0.5em;
+    color: white;
+}
+
+.center a {
+	text-decoration: none;
 }
